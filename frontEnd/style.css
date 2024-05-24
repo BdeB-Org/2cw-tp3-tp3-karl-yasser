@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin: 25px auto 25px  auto;
+    text-decoration: none;
+}
+
+#links_c {
+    display: flex;
+    gap: 20px;
+}
+
+#links_c ion-icon {
+    vertical-align: bottom;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: "Mulish", "Raleway", "sans-serif";
+}
+
+#banner_section {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-family: "Radio Canada Big", "Roboto", "Poppins", "sans-serif";
+    letter-spacing: 1.25px;
+    margin-top: 55px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+}
+
+#banner_description {
+    color: white;
+    font-family: "Mulish", "sans-serif";
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#banner_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+button {
+    background-color: #0071e3;
+    padding: 11px 21px;
+    border-radius: 25px;
+    font-size: 15px;
+    border: 0;
+    font-family: "Radio Canada Big", "Roboto", "sans-serif";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: 300;
+}
+
+button ion-icon {
+    vertical-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#secondaryBtn {
+    background-color: unset;
+    border: 1px #0071e3 solid;
+    color: #0071e3;
+}
+
+#secondaryBtn:hover {
+    color: white;
+    background-color: #0071e3;
+}
+
+#products_section {
+    margin: 50px auto auto auto;
+    width: 65%;
+    /*background-color: green;*/
+}
+
+h2 {
+    font-size: 32px;
+    color: black;
+    font-family: "Radio Canada Big", "Roboto", "Poppins", "sans-serif";
+    letter-spacing: 1.25px;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#products_grid {
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 26.8%;
+    margin-bottom: 7px;
+    height: 350px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 15px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 20px;
+}
+.product img {
+    object-fit: contain;
+}
+
