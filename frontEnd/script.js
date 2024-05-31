@@ -14,7 +14,7 @@ window.onload = function () {
                         productDiv.className = 'product'; //donne un nom de class
                         productDiv.innerHTML = `
                             <div> 
-                                <h3>${item.name}</h3>
+                                <h3 class="miniTitle">${item.name}</h3>
                                 <p>${item.description}</p>                           
                                 <img src="images/${item.name.toLowerCase().replace(/ /g, '-')}.jpg" alt="${item.name}">
                                 <strong>Price:</strong> $${item.price}<br/>

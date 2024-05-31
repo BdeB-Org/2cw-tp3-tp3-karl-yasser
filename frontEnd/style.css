@@ -60,7 +60,7 @@ nav {
     flex-direction: column;
 }
 
-h1 {
+.title {
     color: white;
     font-family: "Radio Canada Big", "Roboto", "Poppins", "sans-serif";
     letter-spacing: 1.25px;
@@ -123,12 +123,12 @@ button:hover {
 }
 
 #products_section {
-    margin: 50px auto auto auto;
+    margin: 50px auto 100px auto;
     width: 65%;
     /*background-color: green;*/
 }
 
-h2 {
+.subtitle {
     font-size: 32px;
     color: black;
     font-family: "Radio Canada Big", "Roboto", "Poppins", "sans-serif";
@@ -142,7 +142,10 @@ h2 {
 #products_grid {
     /*background-color: blue;*/
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 14px;
+    padding: 0;
     flex-wrap: wrap;
 }
 
@@ -150,9 +153,8 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 26.8%;
-    margin-bottom: 7px;
-    height: 350px;
+    width: 19%;
+    height: 300px;
     border-radius: 25px;
     background-color: black;
     color: white;
@@ -161,11 +163,46 @@ h2 {
     font-size: 15px;
 }
 
-h3 {
+.miniTitle {
+    vertical-align: top;
     margin: 0;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .product img {
     object-fit: contain;
+}
+
+.product_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: center;
+}
+
+.product_text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+}
+
+.product_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
+    margin: 0;
+    font-size: 13px;
+}
+
+.product_description {
+    margin: 18px 0 0 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Inter", "Raleway", "sans-serif";
 }
