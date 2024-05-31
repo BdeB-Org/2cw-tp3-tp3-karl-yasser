@@ -1,12 +1,11 @@
 
-const productsGrid = document.getElementById('products_sg'); //
 
 window.onload = function () {
     fetch('http://localhost:8080/ords/hr2/products/')
         .then(response => response.json())
         .then(data => {
             console.log(data);
-
+            const productsGrid = document.getElementById('products_grid'); //
             data.items.forEach(item => {
                 //  va prendre le nombre de review
                 fetch(`http://localhost:8080/ords/hr2/reviews/?q={"product_id":${item.product_id}}`)
@@ -20,7 +19,6 @@ window.onload = function () {
                                     <div class="product_header">
                                         <h3 class="miniTitle">${item.name}</h3>
                                         <div class="product_price">${item.price}</div>
-
                                     <p class="product_description">${item.description}</p>
                                 </div>
                                 <img src="images/${item.name.toLowerCase().replace(/ /g, '-')}.png" alt="${item.name}">
