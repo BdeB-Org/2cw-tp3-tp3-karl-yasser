@@ -23,6 +23,8 @@ window.onload = function () {
                             </div>
                         `; //  images/iphone-13.jpg for "iPhone 13" obligatoirement se format 
                         productsContainer.appendChild(productDiv);
+
+
                     })
                     .catch(error => console.error('Error fetching reviews:', error));
             });
