@@ -14,15 +14,17 @@ window.onload = function () {
                         const productDiv = document.createElement('div');
                         productDiv.className = 'product'; //donne un nom de class
                         productDiv.innerHTML = `
-                            <div class="product">
+                            
                                 <div class="product_text">
                                     <div class="product_header">
                                         <h3 class="miniTitle">${item.name}</h3>
                                         <div class="product_price">${item.price}</div>
                                     <p class="product_description">${item.description}</p>
+                                    <strong>Reviews:</strong> ${reviewData.items.length || 0} reviews
+
                                 </div>
                                 <img src="images/${item.name.toLowerCase().replace(/ /g, '-')}.png" alt="${item.name}">
-                            </div>
+                            
                         `; //  images/iphone-13.jpg for "iPhone 13" obligatoirement se format 
                         productsGrid.appendChild(productDiv);
                     })
