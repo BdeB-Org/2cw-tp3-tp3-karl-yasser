@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<link rel="stylesheet" href="/frontEnd/style.css">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/frontEnd/style.css">
+    <link rel="stylesheet" href="produit.css">
 </head>
 
 <body>
-    <nav>
-        <ion-icon class="links" name="logo-apple"></ion-icon>
-        <div id="links_c">
-            <a class="links" href="#">iPhone</a>
-            <a class="links" href="#">iPad</a>
-            <a class="links" href="#">Mac</a>
-            <ion-icon id="person" class="links" name="person-outline"></ion-icon>
-            <ion-icon id="bag" class="links" name="bag-outline"></ion-icon>
+<nav>
+    <ion-icon class="links" name="logo-apple"></ion-icon>
+    <div id="links_c">
+        <a class="links" href="#">iPhone</a>
+        <a class="links" href="#">iPad</a>
+        <a class="links" href="#">Mac</a>
+        <ion-icon id="person" class="links" name="person-outline"></ion-icon>
+        <ion-icon id="bag" class="links" name="bag-outline"></ion-icon>
+    </div>
+</nav>
+
+<section id="product_container">
+    <div id="img_container">
+        <img id="product_img" src="../images/ipad-pro.png" alt="img">
+    </div>
+
+    <div id="product_info">
+        <h1 id="product_name">iPad Pro</h1>
+        <p id="product_description">The ultimate iPad experience. Now with M1.</p>
+
+        <div id="tags">
+            <div class="tag">483 reviews</div>
+            <div class="tag">5 available</div>
         </div>
-    </nav>
-</body>
+
+        <div id="product_buttons">
+            <button>Add to cart
+                <ion-icon name="bag-outline"></ion-icon>
+            </button>
+            <button id="secondaryBtn">Learn more
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+        </div>
+    </div>
+</section>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+</body>
 </html>
