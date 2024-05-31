@@ -13,9 +13,9 @@ body {
 
 #productsContainer {
     display: grid;
-    grid-template-rows: repeat(auto-fill, minmax(70vh, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(40vh, 1fr));
+    gap: 10px;
+    padding: 10px;
 }
 
 .product {
