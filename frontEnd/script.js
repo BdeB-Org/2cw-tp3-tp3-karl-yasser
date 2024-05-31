@@ -16,7 +16,7 @@ window.onload = function () {
                             <div> 
                                 <h3 class="miniTitle">${item.name}</h3>
                                 <p>${item.description}</p>                           
-                                <img src="images/${item.name.toLowerCase().replace(/ /g, '-')}.jpg" alt="${item.name}">
+                                <img src="images/${item.name.toLowerCase().replace(/ /g, '-')}.png" alt="${item.name}">
                                 <strong>Price:</strong> $${item.price}<br/>
                                 <strong>Stock:</strong> ${item.stock_quantity}<br/>
                                 <strong>Reviews:</strong> ${reviewData.items.length || 0} reviews
