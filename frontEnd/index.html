@@ -37,7 +37,16 @@
 
     <section id="products_section">
         <h2>Other products</h2>
-        <div id="productsContainer"></div> <!-- pour le java -->
+        <div id="productsContainer">
+            <div id="product">
+                <h3>${item.name}</h3>
+                <p>${item.description}</p>
+                <img src="images/airpods-max.png" alt="${item.name}">
+                <strong>Price:</strong> $${item.price}<br/>
+                <strong>Stock:</strong> ${item.stock_quantity}<br/>
+                <strong>Reviews:</strong> ${reviewData.items.length || 0} reviews
+            </div>
+        </div> <!-- pour le java -->
 
     </section>
 
